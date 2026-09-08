@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Profile</title>
+    <title>Marius | Student Profile</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -16,18 +16,39 @@
 
     <main class="profile-container">
 
-        <!-- PROFILE HEADER -->
-        <header class="profile-header">
+        <!-- NAVIGATION -->
+        <nav class="navbar">
 
-            <img 
-                src="marius.jpg" 
-                alt="Marius Pating" 
+            <a href="#profile">Profile</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+
+            <button class="theme-button" onclick="toggleTheme()">
+                Toggle Theme
+            </button>
+
+        </nav>
+
+
+        <!-- PROFILE HEADER -->
+        <header class="profile-header" id="profile">
+
+            <img
+                src="marius.jpg"
+                alt="Marius Pating"
                 class="profile-picture"
             >
 
             <div class="profile-text">
+
                 <h1>Marius</h1>
+
                 <p>BS Computer Science - 3rd Year</p>
+
+                <p class="typing-text" id="typingText"></p>
+
             </div>
 
         </header>
@@ -63,24 +84,130 @@
         </section>
 
 
+        <!-- FEATURE BUTTONS -->
+        <section class="feature-section">
+
+            <h2>Interactive Features</h2>
+
+            <div class="feature-buttons">
+
+                <button onclick="showAbout()">
+                    About Me
+                </button>
+
+                <button onclick="showSkills()">
+                    My Skills
+                </button>
+
+                <button onclick="showProjects()">
+                    Projects
+                </button>
+
+                <button onclick="showAchievements()">
+                    Achievements
+                </button>
+
+                <button onclick="showGoals()">
+                    My Goals
+                </button>
+
+                <button onclick="showFunFact()">
+                    Fun Fact
+                </button>
+
+                <button onclick="showDateTime()">
+                    Live Date & Time
+                </button>
+
+            </div>
+
+            <div id="featureInfo"></div>
+
+        </section>
+
+
         <!-- SKILLS -->
-        <section>
+        <section id="skills">
 
             <h2>Skills</h2>
 
             <ul>
+
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Python</li>
                 <li>Problem Solving</li>
+
             </ul>
 
         </section>
 
 
-        <!-- CONTACT INFORMATION -->
+        <!-- PROJECTS -->
+        <section id="projects">
+
+            <h2>Projects</h2>
+
+            <div class="project-card">
+
+                <h3>Student Profile Website</h3>
+
+                <p>
+                    A futuristic personal profile website created using
+                    HTML, CSS, and JavaScript.
+                </p>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <h3>Python Projects</h3>
+
+                <p>
+                    Beginner Python projects focused on programming logic,
+                    data processing, and problem solving.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ACHIEVEMENTS -->
+        <section id="achievements">
+
+            <h2>Achievements</h2>
+
+            <ul>
+
+                <li>Computer Science Student</li>
+                <li>Developing Web Development Skills</li>
+                <li>Learning Python Programming</li>
+                <li>Participating in Computer Science Activities</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- GOALS -->
         <section>
+
+            <h2>My Goals</h2>
+
+            <p>
+                My goal is to improve my programming skills, become more
+                confident in web development, and gain more experience
+                creating useful and creative software projects.
+            </p>
+
+        </section>
+
+
+        <!-- CONTACT INFORMATION -->
+        <section id="contact">
 
             <h2>Contact Information</h2>
 
@@ -115,6 +242,20 @@
 
         </section>
 
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                © 2026 Marius Ahron G. Pating
+            </p>
+
+            <p id="footerClock">
+                Loading time...
+            </p>
+
+        </footer>
+
     </main>
 
 
@@ -124,5 +265,3 @@
 </body>
 
 </html>
-
-    
